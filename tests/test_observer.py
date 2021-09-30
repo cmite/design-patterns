@@ -11,7 +11,7 @@ class TestTemperatureSubscriber:
         """Test the update method."""
         subscriber = TemperatureSubscriber()
         context = {"temperature": 20}
-        expected = f"Current temperature is 20°C"
+        expected = "Current temperature is 20°C"
         assert expected == subscriber.update(context)
 
 
@@ -22,7 +22,7 @@ class TestPressureSubscriber:
         """Test the update method."""
         subscriber = PressureSubscriber()
         context = {"pressure": 0.23}
-        expected = f"Current pressure is 0.23 atm"
+        expected = "Current pressure is 0.23 atm"
         assert expected == subscriber.update(context)
 
 
@@ -33,7 +33,7 @@ class TestHumiditySubscriber:
         """Test the update method."""
         subscriber = HumiditySubscriber()
         context = {"humidity": 57}
-        expected = f"Current humidity level is 57%"
+        expected = "Current humidity level is 57%"
         assert expected == subscriber.update(context)
 
 

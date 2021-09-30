@@ -84,7 +84,7 @@ class Publisher:
         """Remove a subscriber from the subscribers list."""
         if subscriber in self.subscribers:
             self.subscribers.remove(subscriber)
-    
+
     def notify_subscribers(self):
         """Notify all subscribers."""
         for subscriber in self.subscribers:
